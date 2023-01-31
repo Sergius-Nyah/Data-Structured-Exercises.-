@@ -1,7 +1,8 @@
+// Checks the number of times a number appears in an array of random numbers. 
 #include<stdio.h>
 #include<stdlib.h>
-int up_bound=10;
-int how_many(int array[], int size, int value)
+int up_bound = 10;   // No random digit should be > 10
+int how_many(int array[], int size, int value)  // Driver code, checks repeated digits. 
 {
     int i, count = 0;
     for(i=0;i<size;i++)
@@ -11,7 +12,7 @@ int how_many(int array[], int size, int value)
     }
 return count;
 }
-void randomize(int arr[], int size, int up_bound)
+void randomize(int arr[], int size, int up_bound)  // Initialises and stores random numbers in an array
 {
     int i;
     for(i=0;i<size;i++)
